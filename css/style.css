@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+    overflow: hidden;
+}
+table{
+    border: 5px solid red;
+    background-color: bisque;
+    border-collapse: collapse;
+    margin: auto; 
+}
+td{
+    width: 150px;
+    height:100px;
+    border: 3px solid green;
+    text-align: center;
+}
