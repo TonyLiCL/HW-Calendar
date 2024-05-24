@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/20220629_211120.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.aside{
+    width: 400px;
+    height: 460px;
+}
+.aside-header{
+    width: 400px;
+    height: 20%;
+    font-size: 50px;
+    font-weight: bold;
+    background-color: black;
+    text-align: center;
+    color: antiquewhite;
+    padding-top: 20px;
+}
+.aside-footer{
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    height: calc(100% - 20%);
+    justify-content: space-around;
+    background-image: url(../img/20220629_211533.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover; /* Maintain aspect ratio */
+    overflow: hidden; /* Hide overflow to prevent distortion */
+}
+.aside-footer form {
+    display: inline-block;
+}
+
+.calendar{
+    width: 50%;
+    height: 76.5vh;
+}
+table{
+    border: 5px solid white;
+    background-color: rgba(255, 235, 205, 0.3); /* bisque color with 30% opacity */;
+    border-collapse: collapse;
+    margin-top: 79px;
+}
+td{
+    width: 100px;
+    height:65px;
+    border: 3px solid white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "courier";
+    transition: background-color 0.2s ease, color 0.2s ease, font-size 0.2s ease;
+}
+.holiday{
+    color: red;
+}
+td:hover{
+    background-color: darkred;
+    color: white;
+    font-size: 50px;
+}
